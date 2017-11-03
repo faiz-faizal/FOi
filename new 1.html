@@ -1,0 +1,92 @@
+<html>
+	<head>
+	
+	<script language="javascript"><!--
+	function plus(){
+	
+	var n1;
+	var n2;
+	
+	n1 = document.calculate.num1.value;
+	n2 = document.calculate.num2.value;
+	
+	n1 = parseFloat(n1);
+	n2 = parseFloat(n2);
+	
+	document.calculate.result.value=n1+n2;
+	}
+	
+	function multiply(){
+	var n1;
+	var n2;
+	
+	n1 = document.calculate.num1.value;
+	n2 = document.calculate.num2.value;
+	
+	n1 = parseFloat(n1);
+	n2 = parseFloat(n2);
+	
+	document.calculate.result.value=(n1*n2);
+	}
+	
+	function divide(){
+	
+	var n1;
+	var n2;
+	
+	n1 = document.calculate.num1.value;
+	n2 = document.calculate.num2.value;
+	
+	n1 = parseFloat(n1);
+	n2 = parseFloat(n2);
+	
+	document.calculate.result.value=(n1/n2);
+	}
+	
+	function minus(){
+	
+	var n1;
+	var n2;
+	
+	n1 = document.calculate.num1.value;
+	n2 = document.calculate.num2.value;
+	
+	n1 = parseFloat(n1);
+	n2 = parseFloat(n2);
+	
+	document.calculate.result.value=(n1-n2);
+	}
+	--></script>
+	</head>
+
+	<body>
+	
+	<form name=calculate>
+		Enter 2 number 
+		&nbsp;
+		<input type=text name=num1 value="">
+		&nbsp;
+		<input type=text name=num2 value="">
+		
+		<br><br>
+		
+		<input type=button name=plus_button value="+" onclick=plus()>
+		&nbsp;
+		<input type=button id=multiply_button value="-" onclick=minus()>
+		&nbsp;
+		<input type=button name=multiply_button value="*" onclick=multiply()>
+		&nbsp;
+		<input type=button name=divide_button value="/" onclick=divide()>
+		<br><br>
+		
+		<input type=reset value="Reset Form" >
+		<br><br>
+		<textarea name=result >
+		
+		
+	</form>
+
+	</body>
+
+
+	</html>
